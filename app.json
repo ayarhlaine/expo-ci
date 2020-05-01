@@ -7,6 +7,7 @@
       "android",
       "web"
     ],
+    "description": "Expo Starter App (Jest,react-test-renderer)",
     "android": {
       "package": "com.devayarhlaine.expoci"
     },
