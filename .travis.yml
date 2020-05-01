@@ -9,6 +9,7 @@ cache:
 before_script:
   - npm install -g npm@latest
   - npm install -g expo-cli
+  - npm install -g turtle-cli
 jobs:
   include:
     - stage: 'Testing App'
@@ -21,4 +22,6 @@ jobs:
       script:
         - npm ci
         - npx expo login -u $EXPO_USERNAME -p $EXPO_PASSWORD
-        - yes | expo build:android --release-channel staging --no-publish --no-wait --non-interactive
+        - turtle build:android \
+          --keystore-path ./keys/expo-ci.keystore \
+          --keystore-alias expo-ci
