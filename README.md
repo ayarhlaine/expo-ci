@@ -15,3 +15,6 @@ https://docs.expo.io/guides/testing-with-jest/
 
 # React Test Renderer
 https://reactjs.org/docs/test-renderer.html
+
+# Found Issues
+https://github.com/expo/expo/issues/6639
